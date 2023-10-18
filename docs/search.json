@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Lokctrw.github.io",
+    "section": "",
+    "text": "This is Lok and on this page you can search and display football players with their rating!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#intro",
+    "href": "index.html#intro",
+    "title": "Lokctrw.github.io",
+    "section": "",
+    "text": "This is Lok and on this page you can search and display football players with their rating!"
+  },
+  {
+    "objectID": "index.html#github-link",
+    "href": "index.html#github-link",
+    "title": "Lokctrw.github.io",
+    "section": "github link",
+    "text": "github link\n``https://github.com/Lokctrw/NM2207``\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]
