@@ -6,9 +6,11 @@ title: "Lokctrw.github.io"
 
 This is Lok and on this page you can search and display football players with their rating!
 
-## github link
+[github link](https://github.com/Lokctrw/NM2207)
 
-\`\``https://github.com/Lokctrw/NM2207`\`\`
+<iframe height="400" width="100%" frameborder="no" src="https://lokctrw.shinyapps.io/search_engine/">
+
+</iframe>
 
 This is a Quarto website.
 

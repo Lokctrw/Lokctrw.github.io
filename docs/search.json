@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Lokctrw.github.io",
     "section": "",
-    "text": "This is Lok and on this page you can search and display football players with their rating!"
+    "text": "This is Lok and on this page you can search and display football players with their rating!\ngithub link\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
@@ -18,13 +18,13 @@
     "href": "index.html#intro",
     "title": "Lokctrw.github.io",
     "section": "",
-    "text": "This is Lok and on this page you can search and display football players with their rating!"
+    "text": "This is Lok and on this page you can search and display football players with their rating!\ngithub link\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "index.html#github-link",
     "href": "index.html#github-link",
     "title": "Lokctrw.github.io",
     "section": "github link",
-    "text": "github link\n``https://github.com/Lokctrw/NM2207``\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "github link\ngithub link\n\nlibrary(shiny)\n\neafc_data &lt;- read.csv(\"male_players.csv\")\n\nui &lt;- fluidPage(\n  sidebarLayout(\n    sidebarPanel(\n      textInput(\"search_query\", \"Search:\")\n    ),\n    mainPanel(\n      DT::dataTableOutput(\"search_result_table\")\n    )\n  )\n)\n\nserver &lt;- function(input, output) {\n  searchData &lt;- reactive({\n    result &lt;- eafc_data[grep(input$search_query, eafc_data$\"Name\", ignore.case = TRUE), ]\n    return(result)\n  })\n  \n  output$search_result_table &lt;- DT::renderDataTable({\n    searchData()\n  })\n}\n\nshinyApp(ui = ui, server = server)\n\n\nListening on http://127.0.0.1:7612\n\n\n\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]
