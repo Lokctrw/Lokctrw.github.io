@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Lokctrw.github.io",
     "section": "",
-    "text": "This is Lok and on this page you can search and display football players with their rating!\ngithub link\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is Lok and on this page you can search and display football players with their rating!"
   },
   {
     "objectID": "about.html",
@@ -18,13 +18,34 @@
     "href": "index.html#intro",
     "title": "Lokctrw.github.io",
     "section": "",
-    "text": "This is Lok and on this page you can search and display football players with their rating!\ngithub link\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is Lok and on this page you can search and display football players with their rating!"
   },
   {
     "objectID": "index.html#github-link",
     "href": "index.html#github-link",
     "title": "Lokctrw.github.io",
     "section": "github link",
-    "text": "github link\ngithub link\n\nlibrary(shiny)\n\neafc_data &lt;- read.csv(\"male_players.csv\")\n\nui &lt;- fluidPage(\n  sidebarLayout(\n    sidebarPanel(\n      textInput(\"search_query\", \"Search:\")\n    ),\n    mainPanel(\n      DT::dataTableOutput(\"search_result_table\")\n    )\n  )\n)\n\nserver &lt;- function(input, output) {\n  searchData &lt;- reactive({\n    result &lt;- eafc_data[grep(input$search_query, eafc_data$\"Name\", ignore.case = TRUE), ]\n    return(result)\n  })\n  \n  output$search_result_table &lt;- DT::renderDataTable({\n    searchData()\n  })\n}\n\nshinyApp(ui = ui, server = server)\n\n\nListening on http://127.0.0.1:7612\n\n\n\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "github link"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Lokctrw.github.io",
+    "section": "",
+    "text": "This is Lok and on this page you can search and display football players with their rating!"
+  },
+  {
+    "objectID": "index.html#which-country-has-the-highest-count-of-professional-players",
+    "href": "index.html#which-country-has-the-highest-count-of-professional-players",
+    "title": "Lokctrw.github.io",
+    "section": "",
+    "text": "## 3. What percentage of players have a overall rating higher than 80, what does that imply?\n\n#3. What percentage of players have a overall rating higher than 80, what does that imply? \nnumber_of_players_with_rating_above_80 &lt;- length(which(eafc_data$Overall &gt; 80))\ntotal_number_of_players &lt;- nrow(eafc_data)\npercentage_of_players_with_rating_above_80 &lt;- number_of_players_with_rating_above_80 / total_number_of_players * 100\n\n# Print the percentage\nprint(percentage_of_players_with_rating_above_80)\n\nggplot(eafc_data, aes(x = Overall, fill = Position)) +\n  geom_density(adjust = 2, alpha = 0.5) +\n  labs(title = \"Distribution of Overall Ratings in FC-24\", x = \"Overall Rating\", y = \"Density\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "index.html#what-percentage-of-players-have-a-overall-rating-higher-than-80-what-does-that-imply",
+    "href": "index.html#what-percentage-of-players-have-a-overall-rating-higher-than-80-what-does-that-imply",
+    "title": "Lokctrw.github.io",
+    "section": "",
+    "text": "2.240454%"
   }
 ]

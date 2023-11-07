@@ -1,17 +1,35 @@
 ---
 title: "Lokctrw.github.io"
+execute:
+  echo: FALSE
 ---
 
-## intro
+# Introduction
 
 This is Lok and on this page you can search and display football players with their rating!
 
-[github link](https://github.com/Lokctrw/NM2207)
+### [Github Link](https://github.com/Lokctrw/NM2207) {#sec-github-link}
 
-<iframe height="400" width="100%" frameborder="no" src="https://lokctrw.shinyapps.io/search_engine/">
+## 1. Which current club has the highest average rating of players?
+
+![](club%20average%20rating%20table.png){width="667"}
+
+![](average%20rating%20by%20club%20top%2020.png)
+
+![](average%20rating%20club%20distribution.png)
+
+## 2. Which country has the highest count of professional players?
+
+![](player%20count%20by%20nation%20table.png){width="677"} ![](number%20of%20player%20by%20country.png)
+
+## 3. What percentage of players have a overall rating higher than 80, what does that imply?
+
+#### The answer is [***2.240454%***]{.underline}
+
+![](distribution%20of%20overall%20ratings.png)
+
+## FINALLY\~ search your favourite player!
+
+<iframe height="800" width="100%" frameborder="no" src="https://lokctrw.shinyapps.io/search_engine/">
 
 </iframe>
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
