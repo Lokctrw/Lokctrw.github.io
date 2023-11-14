@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Lokctrw.github.io",
     "section": "",
-    "text": "This is Lok and on this page you can search and display football players with their rating!"
+    "text": "This is Lok and on this page you can explore about football players’ rating, search and display your favorite player!"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "This is Lok, an international student from Hong Kong currently studying Psychology as Major and Communication & New Media as Minor.\nWelcome to my page!"
   },
   {
     "objectID": "index.html#intro",
@@ -38,14 +38,35 @@
     "objectID": "index.html#which-country-has-the-highest-count-of-professional-players",
     "href": "index.html#which-country-has-the-highest-count-of-professional-players",
     "title": "Lokctrw.github.io",
-    "section": "",
-    "text": "## 3. What percentage of players have a overall rating higher than 80, what does that imply?\n\n#3. What percentage of players have a overall rating higher than 80, what does that imply? \nnumber_of_players_with_rating_above_80 &lt;- length(which(eafc_data$Overall &gt; 80))\ntotal_number_of_players &lt;- nrow(eafc_data)\npercentage_of_players_with_rating_above_80 &lt;- number_of_players_with_rating_above_80 / total_number_of_players * 100\n\n# Print the percentage\nprint(percentage_of_players_with_rating_above_80)\n\nggplot(eafc_data, aes(x = Overall, fill = Position)) +\n  geom_density(adjust = 2, alpha = 0.5) +\n  labs(title = \"Distribution of Overall Ratings in FC-24\", x = \"Overall Rating\", y = \"Density\") +\n  theme_bw()"
+    "section": "2. Which country has the highest count of professional players?",
+    "text": "2. Which country has the highest count of professional players?\n\n\n\nTable 2\n\n\nFrom the table, ranked by the number of professional football players in each country, we can see England has the highest count of professional player, over 1500 registered players, followed by Germany and Spain. Interestingly, despite having the greatest number of players, England only won the World Cup once, all the way back in 1966.\n\n\n\nFig. 3.\n\n\nBy illustrating these data using graphs, one can tell that the number of players in each countries differ significantly, with only the Top 5 countries having a count over 500 players, where the difference between the 1st and 6th place to be larger than 1000, England and Italy, 1511 and 474 respectively. From these results, one could argue that the national team performance is not solely dependent on the number of players registered in the country."
   },
   {
     "objectID": "index.html#what-percentage-of-players-have-a-overall-rating-higher-than-80-what-does-that-imply",
     "href": "index.html#what-percentage-of-players-have-a-overall-rating-higher-than-80-what-does-that-imply",
     "title": "Lokctrw.github.io",
+    "section": "3. What percentage of players have a overall rating higher than 80, what does that imply?",
+    "text": "3. What percentage of players have a overall rating higher than 80, what does that imply?\n\nThe answer is 2.240454%!\n\n\n\n\nFig. 4.\n\n\nLooking from the view of individual player, it has always been a common sense that it is extremely difficult to become a player that compete at the top level of football. How difficult is that exactly? Only 2.24% of all the players obtain a rating higher than 80.\nAs shown by the distribution plot, majority of the players have a rating between 60 to 70, and only a small portion have rating over 80. However, as indicated by the different color of distribution corresponding to players’ position, one can tell that it is even more difficult to be one of the top player if the position is striker (ST, RW, LW), relatively to other positions. Therefore, this illustration shows clearly how much efforts are required for one to be a top class player."
+  },
+  {
+    "objectID": "index.html#which-current-club-has-the-highest-average-rating-of-players",
+    "href": "index.html#which-current-club-has-the-highest-average-rating-of-players",
+    "title": "Lokctrw.github.io",
+    "section": "1. Which current club has the highest average rating of players?",
+    "text": "1. Which current club has the highest average rating of players?\n\n\n\nFig. 1.\n\n\nFrom the first table, we can see the list of football club ranked in the order by the average rating of players in each team. The top three will be FC Bayern München from Germany, followed by Inter from Italy and Paris SG from France, with a respective average rating of 81.38, 79.96 and 79.86, out of 100.\n\n\n\nFig. 1.\n\n\nThe graph illustrates the comparison of the Top 20 teams in regards to average rating of players. Where the Top 5 is labelled with the white text box. As shown, the difference between the Top 20 teams is relatively small, ranging from 81.38 of FC Bayern München to 76.63 from Roma FC.\n\n\n\nFig. 2.\n\n\nBut what if we compare the average player rating with every professional teams, the result is illustrated by the graph above. As one can see, majority of the teams have an average rating between 60 to 70, and is approximately follows a normal distribution. Therefore, one can suggest that it is extremely difficult to have a team average rating above 75, which can be considered as the Top teams around the world."
+  },
+  {
+    "objectID": "index.html#finally-search-your-favourite-player",
+    "href": "index.html#finally-search-your-favourite-player",
+    "title": "Lokctrw.github.io",
     "section": "",
-    "text": "2.240454%"
+    "text": "Type in the search bar your favourite player (e.g. Lionel Messi) Scroll to the right to view detail categorical rating of each player"
+  },
+  {
+    "objectID": "index.html#finally-search-your-favorite-player",
+    "href": "index.html#finally-search-your-favorite-player",
+    "title": "Lokctrw.github.io",
+    "section": "FINALLY~ search your favorite player!",
+    "text": "FINALLY~ search your favorite player!\nType in the search bar your favorite player (e.g. Lionel Messi)\nScroll to the right to view detail categorical rating of each player\n\n\nKey in the players’ row number to view their categorical rating! Compare and Contrast!"
   }
 ]

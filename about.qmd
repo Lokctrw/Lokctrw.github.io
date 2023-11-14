@@ -2,4 +2,8 @@
 title: "About"
 ---
 
-About this site
+This is Lok, an international student from Hong Kong currently studying Psychology as Major and Communication & New Media as Minor.
+
+Welcome to my page!
+
+Data are sourced from the Electronic Arts Football Club 24 ('EAFC24') football game, aka FIFA
