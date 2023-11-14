@@ -8,7 +8,9 @@ execute:
 
 This is Lok and on this page you can explore about football players' rating, search and display your favorite player!
 
-### [Github Link](https://github.com/Lokctrw/NM2207) {#sec-github-link}
+> ### Click [Github Link](https://github.com/Lokctrw/NM2207) to view the progress... {#sec-github-link}
+
+![EAFC24](eafc24.jpeg)
 
 # Some common questions:
 
